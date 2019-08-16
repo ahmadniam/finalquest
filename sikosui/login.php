@@ -75,7 +75,7 @@
         </form>
 
         <a href="forgot.php">Lupa password?</a><br><a href="daftaruser.php">Belum Punya Akun?</a><br>
-        <a href="https://goo.gl/RJKTSN">Kembali ke Website Wisma UI</a>
+        <a href="http://3.87.231.198">Kembali ke Website Wisma UI</a>
 
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->

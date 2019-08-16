@@ -4,7 +4,7 @@
     <h1>
       Tambah Data User
     </h1>
-    
+
   </section>
 
   <!-- Main content -->
@@ -38,12 +38,12 @@
             }
             else {
 
-                  $s=mysqli_query($koneksi,"insert into User (email,password,hak_akses)
+                  $s=mysqli_query($koneksi,"insert into user (email,password,hak_akses)
                           values('$email','$password','$hak_akses')");
                     if ($s)
                     {
                         echo "<div class='alert alert-success'><h4>Data User sudah ditambahkan</h4></div><br>";
-                        echo "<meta http-equiv=refresh content=2;url=index.php?page=DataUser>";
+                        echo "<meta http-equiv=refresh content=2;url=index.php?page=datauser>";
 
                     }
                     else

@@ -64,7 +64,7 @@ $user_id=$_SESSION['user_id'];
             if ($d)
             {
                 echo "<div class='alert alert-success'><h4>Perubahan berhasil.</h4></div><br>";
-                echo "<meta http-equiv=refresh content=2;url=index.php?page=DataUser>";
+  
             }
             else
             {

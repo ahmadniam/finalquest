@@ -33,7 +33,7 @@
                   if ($s)
                   {
                       echo "<div class='alert alert-success'><h4>Perubahan berhasil.</h4></div><br>";
-                      echo "<meta http-equiv=refresh content=2;url=index.php?page=DataKamar>";
+                      echo "<meta http-equiv=refresh content=2;url=index.php?page=datakamar>";
                   }
                   else
                   {
