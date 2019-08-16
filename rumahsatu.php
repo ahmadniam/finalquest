@@ -158,14 +158,14 @@ li.dropdown {
                 <?php
                 include "koneksi.php";
                 $no=1;
-                $query = mysqli_query($koneksi,"select k.id_kamar,k.no_kamar,k.id_rumah,r.nama_rumah,k.status_kamar from kamar k INNER JOIN rumah r on k.id_rumah = r.id_rumah where nama_rumah='Wisma UI 1' order by k.no_kamar and r.nama_rumah asc");
+                $query = mysqli_query($koneksi,"select k.id_kamar,k.no_kamar,k.id_rumah,r.nama_rumah,k.status_kamar from kamar k INNER JOIN rumah r on k.id_rumah = r.id_rumah where nama_rumah='Wisma UI 1' order by LENGTH(no_kamar), no_kamar asc");
                 while($b = mysqli_fetch_assoc($query))
                 {
                   echo "<tr>
                   <td>$no</td>
                   <td>$b[no_kamar]</td>
                   <td>$b[nama_rumah]</td>";
-                  
+
                     if ($b['status_kamar']=='Kosong') { echo "<td><a href='sikosui/login.php' label class='label-success'>Pesan Kamar</a>"; }
                         else {echo "<td><label class='label-danger'>&nbsp; Tidak Dapat Dipesan &nbsp;</label></td>";}
                                     $no++;

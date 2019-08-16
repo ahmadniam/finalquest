@@ -161,7 +161,7 @@ li.dropdown {
                 <?php
                 include "koneksi.php";
                 $no=1;
-                $query = mysqli_query($koneksi,"select k.id_kamar,k.no_kamar,k.id_rumah,r.nama_rumah,k.status_kamar from kamar k INNER JOIN rumah r on k.id_rumah = r.id_rumah where nama_rumah='Wisma UI 2' order by k.no_kamar and r.nama_rumah asc");
+                $query = mysqli_query($koneksi,"select k.id_kamar,k.no_kamar,k.id_rumah,r.nama_rumah,k.status_kamar from kamar k INNER JOIN rumah r on k.id_rumah = r.id_rumah where nama_rumah='Wisma UI 2' order by LENGTH(no_kamar), no_kamar asc");
                 while($b = mysqli_fetch_assoc($query))
                 {
                   echo "<tr>
