@@ -136,7 +136,7 @@ $user_id=$_SESSION['user_id'];
           <ul class="sidebar-menu">
             <li class="header">MAIN MENU</li>
             <!-- Optionally, you can add icons to the links -->
-            <li <?php if (isset($_GET['page'])=='') { echo "class='active'"; }?> ><a href='http://3.87.231.198'><i class='fa fa-home text-success'></i> <span>Website Wisma UI</span></a></li>
+            <li <?php if (isset($_GET['page'])=='') { echo "class='active'"; }?> ><a href='http://wismaui.tk'><i class='fa fa-home text-success'></i> <span>Website Wisma UI</span></a></li>
             <?php
 
             if ($auth_hak_akses=="Admin" or $auth_hak_akses=="Pengelola") {
